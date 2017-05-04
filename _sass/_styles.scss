@@ -112,7 +112,10 @@ h6 {
 
 .roboto {
   font-family: "Roboto", sans-serif;
-  font-weight: 700;
+
+  & strong {
+    font-weight: 700;
+  }
 }
 
 .lato {
