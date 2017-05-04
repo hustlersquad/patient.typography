@@ -137,6 +137,9 @@ h6 {
 }
 
 .font {
+  background-color: $color-extended-yellow;
+  display: inline-block;
+  padding: 0.25em 0.5em;
   text-transform: capitalize;
 }
 
