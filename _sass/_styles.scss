@@ -66,6 +66,7 @@ h1, h2, h3, h4, h5, h6 {
   color: $color-core-navy;
   font-family: "Lato-Bold", sans-serif;
   font-variant-ligatures: none;
+  font-weight: normal;
 }
 
 h1, h2, h3 {
@@ -110,6 +111,7 @@ h6 {
 
 .roboto {
   font-family: "Roboto", sans-serif;
+  font-weight: 700;
 }
 
 .lato {
@@ -117,6 +119,7 @@ h6 {
 
   & strong {
     font-family: "Lato-Bold", sans-serif;
+    font-weight: normal;
   }
 }
 
@@ -125,6 +128,7 @@ h6 {
 
   & strong {
     font-family: "Aleo-Bold", sans-serif;
+    font-weight: normal;
   }
 }
 
