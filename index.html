@@ -1,0 +1,29 @@
+---
+---
+
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <title>{{ site.title }}</title>
+        <link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet">
+        <link rel="stylesheet" href="/assets/css/main.css">
+        <!--[if lt IE 9]>
+        <script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
+        <![endif]-->
+    </head>
+    <body>
+
+      {% for font in site.fonts %}
+      <article class="container {{ font }}">
+        <p class="font">{{ font }}</p>
+        <hr>
+        {% capture article %}{% include chest-infection.md %}{% endcapture %}
+        {{ article | markdownify }}
+      </article>
+      {% endfor %}
+
+    </body>
+</html>

@@ -1,0 +1,159 @@
+// Variables
+
+$bold: 700;
+
+$color-core-blue: #009BF5;
+$color-core-navy: #0F2E4C;
+$color-neutral-grey: #EEEEEE;
+$color-neutral-black: #333333;
+$color-extended-red: #FF3344;
+$color-extended-orange: #FF7F00;
+$color-extended-yellow: #FFD500;
+$color-extended-green: #44AB11;
+$color-extended-teal: #00D9BC;
+$color-extended-indigo: #7F66FF;
+$color-extended-purple: #C24CD9;
+$color-extended-pink: #FF4C9D;
+
+$color-ui-keyline: 1px solid #B7C0C9;
+
+$md: 56rem;
+$xl: 48rem;
+
+// Mixins
+
+@mixin container() {
+  margin: 0 auto;
+  max-width: $xl;
+  padding: 1rem;
+}
+
+// Layout
+
+.container {
+  @include container();
+}
+
+// Typography
+
+html {
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+body {
+
+  @media (min-width: $md) {
+    font-size: 1.25em;
+  }
+}
+
+a {
+  color: darken( $color-core-blue, 10%);
+
+  &:visited {
+    color: darken( $color-extended-indigo, 33%);
+  }
+
+  &:hover {
+    color: $color-core-blue;
+  }
+}
+
+// Headings. Relative sizing is based on the Major Third scale: http://type-scale.com/
+
+h1, h2, h3, h4, h5, h6 {
+  color: $color-core-navy;
+  font-family: "Lato-Bold", sans-serif;
+  font-variant-ligatures: none;
+}
+
+h1, h2, h3 {
+  line-height: 1.1;
+}
+
+h4, h5, h6 {
+  line-height: 1.2;
+}
+
+h1 {
+  font-size: 2.441em;
+  margin: 1.5em 0 1em 0;
+}
+
+h2 {
+  font-size: 1.953em;
+  margin: 1.5em 0 1em 0;
+}
+
+h3 {
+  font-size: 1.563em;
+  margin: 1.5em 0 1em 0;
+}
+
+h4 {
+  font-size: 1.25em;
+  margin: 0.25em 0;
+}
+
+h5 {
+  font-size: 1em;
+}
+
+h6 {
+  font-size: 0.64em;
+  letter-spacing: 0.125em;
+  text-transform: uppercase;
+}
+
+// Body copy
+
+.roboto {
+  font-family: "Roboto", sans-serif;
+}
+
+.lato {
+  font-family: "Lato-Regular", sans-serif;
+
+  & strong {
+    font-family: "Lato-Bold", sans-serif;
+  }
+}
+
+.aleo {
+  font-family: "Aleo-Regular", sans-serif;
+
+  & strong {
+    font-family: "Aleo-Bold", sans-serif;
+  }
+}
+
+.font {
+  text-transform: capitalize;
+}
+
+hr {
+  border: none;
+  border-top: $color-ui-keyline;
+}
+
+p {
+  margin: 1em 0;
+}
+
+ul, ol {
+  margin-left: 0.75em;
+  padding: 0.5em 0 0.5em 0.5em;
+}
+
+ol {
+
+  & li {
+    margin-left: -0.15em;
+    padding-left: 0.15em;
+  }
+}
+
+li {
+  margin-bottom: 1em;
+}
